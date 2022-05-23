@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Pizzeria - The Best Pizza in The World</title>
+</head>
+
+<body>
+    <!--==================== LOADER ====================-->
+    <div class="load" id="load">
+        <img src="assets/img/loader.gif" alt="" class="load__gif">
+    </div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="" class="nav__logo-img">
+                Pizzeria.
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#premium" class="nav__link">Premium</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">Profile</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+            </div>
+
+            <!-- Toogle button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main>
+        <!--==================== HOME ====================-->
+        <section class="home grid" id="home">
+            <div class="home__container">
+                <div class="home__content container">
+                    <h1 class="home__title">
+                        Choose Your Favorite Pizza And Enjoy<span>.</span>
+                    </h1>
+                    <p class="home__description">
+                        Buy the best and delicious pizza in the world.
+                    </p>
+
+                    <div class="home__data">
+                        <div class="home__data-group">
+                            <h2 class="home__data-number">340K</h2>
+                            <h3 class="home__data-title">Testimonials</h3>
+                            <p class="home__data-description">
+                                Testimonials from various customer who happy and love with our products
+                            </p>
+                        </div>
+
+                        <div class="home__data-group">
+                            <h2 class="home__data-number">20+</h2>
+                            <h3 class="home__data-title">Best Pizza Product</h3>
+                            <p class="home__data-description">
+                                Professional preparation with premium quality ingredients
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="#speciality">
+                        <img src="assets/img/scroll.png" alt="" class="home__scroll">
+                    </a>
+                </div>
+            </div>
+
+            <img src="assets/img/home.jpg" alt="" class="home__img">
+        </section>
+
+        <!--==================== ESPECIALTY ====================-->
+        <div class="specialty section container" id="specialty">
+            <div class="speciality__container">
+                <div class="speciality__box">
+                    <h2 class="section__title">
+                        Original Pizza that make you happy and cheer you up!
+                    </h2>
+
+                    <div>
+                        <a href="#" class="button speciality__button">See more</a>
+                    </div>
+                </div>
+
+                <div class="speciality__category">
+                    <div class="speciality__group speciality__line">
+                        <img src="assets/img/pizza.png" alt="" class="speciality__img">
+
+                        <h3 class="speciality__title">Selected Pizza</h3>
+                        <p class="speciality_description">
+                            We select the best premium ingredients and make the best pizza.
+                        </p>
+                    </div>
+
+                    <div class="speciality__group speciality__line">
+                        <img src="assets/img/bread.png" alt="" class="speciality__img">
+
+                        <h3 class="speciality__title">Delicious Bread</h3>
+                        <p class="speciality_description">
+                            Enjoy our delicious bread and make your pizza taste better.
+                        </p>
+                    </div>
+
+                    <div class="speciality__group speciality__line">
+                        <img src="assets/img/drink.png" alt="" class="speciality__img">
+
+                        <h3 class="speciality__title">Tasteful Drink</h3>
+                        <p class="speciality_description">
+                            Enjoy the best drink while eating your pizza.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section" id="products">
+            <div class="products__container container">
+                <h2 class="section__title">
+                    Choose Your Favorite Pizza
+                </h2>
+
+                <ul class="products__filters">
+                    <li class="products__item products__line active-products" data-filter=".pizza">
+                        <h3 class="products__title">Pizza</h3>
+                        <span class="products__stock">Top 3 best products</span>
+                    </li>
+
+                    <li class="products__item products__line" data-filter=".drink">
+                        <h3 class="products__title">Drink</h3>
+                        <span class="products__stock">Top 3 best products</span>
+                    </li>
+
+                    <li class="products__item" data-filter=".bread">
+                        <h3 class="products__title">Bread</h3>
+                        <span class="products__stock">Top 3 best products</span>
+                    </li>
+                </ul>
+
+                <div class="products__content grid">
+                    <!--========= Pizza =========-->
+                    <article class="products__card pizza">
+                        <div class="products__shape">
+                            <img src="assets/img/pizza (1).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 175.000</h2>
+                            <h3 class="products__name">Detroit Mushroom Pizza</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card pizza">
+                        <div class="products__shape">
+                            <img src="assets/img/pizza (2).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 150.000</h2>
+                            <h3 class="products__name">California Pizza</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card pizza">
+                        <div class="products__shape">
+                            <img src="assets/img/pizza (3).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 125.000</h2>
+                            <h3 class="products__name">Peperoni Pizza</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!--========= Drink =========-->
+                    <article class="products__card drink">
+                        <div class="products__shape">
+                            <img src="assets/img/Drink (1).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 33.000</h2>
+                            <h3 class="products__name">Blue Lagoon Squash</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card drink">
+                        <div class="products__shape">
+                            <img src="assets/img/Drink (2).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 35.000</h2>
+                            <h3 class="products__name">Mango Margarita</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card drink">
+                        <div class="products__shape">
+                            <img src="assets/img/Drink (3).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 37.000</h2>
+                            <h3 class="products__name">Green Apple Squash with Mint</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <!--========= Bread =========-->
+                    <article class="products__card bread">
+                        <div class="products__shape">
+                            <img src="assets/img/Bread (1).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 40.000</h2>
+                            <h3 class="products__name">Garlic Cheese Bread</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card bread">
+                        <div class="products__shape">
+                            <img src="assets/img/Bread (2).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 25.000</h2>
+                            <h3 class="products__name">Garlic Bread</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="products__card bread">
+                        <div class="products__shape">
+                            <img src="assets/img/Bread(3).png" alt="" class="products__img">
+                        </div>
+
+                        <div class="products__data">
+                            <h2 class="products__price">IDR 35.000</h2>
+                            <h3 class="products__name">Cheesy Boule</h3>
+
+                            <button class="button products__button">
+                                <i class='bx bx-shopping-bag'></i>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== QUALITY ====================-->
+        <section class="quality section" id="premium">
+            <div class="quality__container container">
+                <h2 class="section__title">
+                    One of the best of the best Pizza just for you!
+                </h2>
+
+                <div class="quality__content grid">
+                    <div class="quality__images">
+                        <img src="assets/img/pizza-4.jpg" alt="" class="quality__img-big">
+                    </div>
+
+                    <div class="quality__data">
+                        <h1 class="quality__title">Holy Rollers Pizzeria</h1>
+                        <h2 class="quality__price">IDR 250.000</h2>
+                        <span class="quality__special">Discount Up To 25%</span>
+                        <p class="quality__description">Dough is tended daily as a blend of love and craft and baked in
+                            an
+                            oven built by third and fourth- generation artisans from Napoli. Ingredients are carefully
+                            sourced from trusted vendors, many of which are unavailable anywhere else in Indonesia.
+                            Drinks
+                            and music are selected to create just the right experience and mood. </p>
+
+                        <div class="quality__buttons">
+                            <button class="button">
+                                Order Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <!--==================== Profile ====================-->
+        <section class="profile section" id="blog">
+            <aside class="profile__container container">
+                <h2 class="section__title">
+                    Meet The Man Behind Pizzeria Pizza
+                </h2>
+
+                <div class="profile__content grid">
+                    <div class="profile__images">
+                        <img src="assets/img/han.png" alt="" class="profile__img-big">
+                    </div>
+
+                    <div class="profile__data">
+                        <h1 class="profile__name">Rayhan Illyas Annabil</h1>
+                        <h2 class="profile__background">Computer Science Student</h2>
+                        <span class="profile__institution">Diponegoro University</span>
+                        <p class="profile__description">Students of fourth year informatics program study with
+                            educational
+                            of programming language. Good in English with good communication and interpersonal skills. A
+                            fast learner with strong-time management skill. Strong work ethic in team or individual
+                            settings
+                            to drive product success and process efficiency. Strong troubleshooting and problem solving
+                            skills with an analytical mindset. </p>
+
+                        <div class="profile__buttons">
+                            <button class="button">
+                                Get in touch
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </aside>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container">
+            <h1 class="footer__title">Pizzeria.</h1>
+
+            <div class="footer__content grid">
+                <div class="footer__data">
+                    <p class="footer__description">
+                        Subscribe to our newsletter
+                    </p>
+
+                    <div class="footer__newsletter">
+                        <input type="email" placeholder="Your Email Address" class="footer__input">
+                        <button class="footer__button">
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Address</h2>
+                    <p class="footer__information">
+                        Semarang 50272, Indonesia
+                        <img src="assets/img/footerflag.png" alt="" class="footer__flag">
+                    </p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Contact</h2>
+                    <p class="footer__information">
+                        +62 857-857-857 <br>
+                        pizzeria@gmail.com
+                    </p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__subtitle">Open</h2>
+                    <p class="footer__information">
+                        Monday - Sunday <br>
+                        9AM - 9PM
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer__group">
+                <ul class="footer__social">
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </ul>
+
+                <span class="footer__copy">
+                    &#169; 2022 Pizzeria. All Rights Reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--========== SCROLL UP ==========-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt'></i>
+    </a>
+
+
+    <!--=============== MIXITUP FILTER ===============-->
+    <script src="assets/js/mixitup.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
